@@ -1,14 +1,14 @@
 #the mod name as displayed in-game
-displayName: "Denevis"
+displayName: "Depths Await"
 
 #the internal name of your mod
-name: "denevis"
+name: "da"
 
 #your name
-author: "You"
+author: "Eredon302"
 
 #the fully qualified main class of the mod
-main: "denevis.DepthsAwait"
+main: "DepthsAwait.DepthsAwait"
 
 #the mod description as seen in the mod dialog
 description: "Write ts l8er"
@@ -17,7 +17,7 @@ description: "Write ts l8er"
 version: 1.0
 
 #the minimum game build required to run this mod
-minGameVersion: 154
+minGameVersion: 156.2
 
 #this is a java mod
 java: true
