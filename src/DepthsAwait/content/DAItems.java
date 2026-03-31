@@ -10,12 +10,15 @@ public class DAItems {
 
         rhodite = new Item("rhodite"){{
             cost = 1f;
+            alwaysUnlocked = true;
         }};
         thaumium = new Item("thaumium"){{
             cost = 1f;
+            alwaysUnlocked = true;
         }};
         magnetite = new Item("magnetite"){{
             cost = 1f;
+            alwaysUnlocked = true;
         }};
 
     }
