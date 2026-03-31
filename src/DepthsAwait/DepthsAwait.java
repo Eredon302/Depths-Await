@@ -1,4 +1,4 @@
-package denevis;
+package DepthsAwait;
 
 import DepthsAwait.content.*;
 
@@ -8,7 +8,7 @@ import mindustry.game.EventType.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 
-public class DepthsAwait extends Mod{
+public class DepthsAwait extends Mod {
 
     /*
     public DepthsAwait(){
@@ -30,6 +30,7 @@ public class DepthsAwait extends Mod{
     */
 
     @Override
-    public void loadContent(){
+    public void loadContent() {
         DAItems.load();
+    }
 }
