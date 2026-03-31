@@ -8,7 +8,7 @@ name: "denevis"
 author: "You"
 
 #the fully qualified main class of the mod
-main: "denevis.Denevis"
+main: "denevis.DepthsAwait"
 
 #the mod description as seen in the mod dialog
 description: "Write ts l8er"

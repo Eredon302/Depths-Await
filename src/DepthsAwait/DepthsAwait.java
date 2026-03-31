@@ -1,17 +1,17 @@
 package denevis;
 
+import DepthsAwait.content.*;
+
 import arc.*;
 import arc.util.*;
-import mindustry.*;
-import mindustry.content.*;
 import mindustry.game.EventType.*;
-import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 
-public class Denevis extends Mod{
+public class DepthsAwait extends Mod{
 
-    public Denevis(){
+    /*
+    public DepthsAwait(){
         Log.info("Loaded ExampleJavaMod constructor.");
 
         //listen for game load event
@@ -27,9 +27,9 @@ public class Denevis extends Mod{
             });
         });
     }
+    */
 
     @Override
     public void loadContent(){
         DAItems.load();
-
 }
