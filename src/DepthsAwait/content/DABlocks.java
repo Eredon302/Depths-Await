@@ -12,11 +12,13 @@ public class DABlocks {
     public static Block transferDuct;
 
     public static void load(){
+
         transferDuct = new Duct("transferDuct"){{
             requirements(Category.distribution, with(DAItems.rhodite, 2));
             health = 90;
             speed = 4f;
         }};
+
     }
 
 }

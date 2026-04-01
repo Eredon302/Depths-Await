@@ -32,5 +32,6 @@ public class DepthsAwait extends Mod {
     @Override
     public void loadContent() {
         DAItems.load();
+        DABlocks.load();
     }
 }
