@@ -10,10 +10,10 @@ import mindustry.ui.dialogs.*;
 
 public class DepthsAwait extends Mod {
 
-
-    public DepthsAwait(){
-        Log.info("Loaded the Depths Await mod.");
     /*
+    public DepthsAwait(){
+        Log.info("Loaded ExampleJavaMod constructor.");
+
         //listen for game load event
         Events.on(ClientLoadEvent.class, e -> {
             //show dialog upon startup
@@ -26,10 +26,8 @@ public class DepthsAwait extends Mod {
                 dialog.show();
             });
         });
-
-    */
     }
-
+    */
 
     @Override
     public void loadContent() {
