@@ -14,7 +14,7 @@ public class DepthsAwait extends Mod {
     public DepthsAwait(){
         Log.info("Loaded ExampleJavaMod constructor.");
 
-        //listen for game load event
+        //listen for game load event or something
         Events.on(ClientLoadEvent.class, e -> {
             //show dialog upon startup
             Time.runTask(10f, () -> {
