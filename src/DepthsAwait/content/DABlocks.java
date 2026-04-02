@@ -52,12 +52,16 @@ public class DABlocks {
         //Special
 
         coreTundra = new CoreBlock("coreTundra"){{
+            health = 5000;
+            armor = 3;
             size = 4;
+            squareSprite = false;
             alwaysUnlocked = true;
             isFirstTier = true;
             unitType = DAUnits.icicle;
 
             landDuration = 240;
+            itemCapacity = 3000;
             incinerateNonBuildable = true;
         }};
 

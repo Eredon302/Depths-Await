@@ -1,5 +1,6 @@
 package DepthsAwait.content;
 
+import arc.graphics.Color;
 import mindustry.gen.UnitEntity;
 import mindustry.type.UnitType;
 
@@ -25,6 +26,8 @@ public class DAUnits {
             mineTier = 1;
             mineSpeed = 4f;
             buildSpeed = 1f;
+
+            outlineColor = Color.valueOf("2e2e35");
         }};
 
     }
