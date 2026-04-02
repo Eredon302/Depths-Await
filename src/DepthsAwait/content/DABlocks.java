@@ -1,5 +1,6 @@
 package DepthsAwait.content;
 
+import arc.graphics.g2d.TextureRegion;
 import mindustry.type.*;
 import mindustry.world.Block;
 import mindustry.world.blocks.distribution.*;
@@ -13,12 +14,25 @@ public class DABlocks {
 
     public static void load(){
 
-        transferDuct = new Duct("transferDuct"){{
-            requirements(Category.distribution, with(DAItems.rhodite, 1));
-            health = 90;
-            speed = 3f;
-            itemCapacity = 2;
-        }};
+        transferDuct = new Duct("transferDuct"){
+
+            {
+                requirements(Category.distribution, with(DAItems.rhodite, 1));
+                health = 90;
+                speed = 3f;
+                alwaysUnlocked = true;
+            }
+
+            @Override
+            public TextureRegion[] icons(){
+                return new TextureRegion[]{
+                        botRegions[1],
+                        topRegions[1]
+                };
+            }
+        };
+
+        //other objects after this
 
     }
 
