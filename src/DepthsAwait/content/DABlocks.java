@@ -1,5 +1,6 @@
 package DepthsAwait.content;
 
+import DepthsAwait.world.blocks.DuctTunnel;
 import arc.graphics.g2d.TextureRegion;
 import mindustry.type.*;
 import mindustry.world.Block;
@@ -11,7 +12,7 @@ import static mindustry.type.ItemStack.with;
 public class DABlocks {
 
     //Item transport
-    public static Block transferDuct, transferSplitway, transferOverpass, transferCrossway;
+    public static Block transferDuct, transferSplitway, transferOverpass, transferCrossway, transferTunnel;
     //Drills
     //Liquids
     //Production
@@ -67,6 +68,21 @@ public class DABlocks {
             squareSprite = false;
 
             range = 4;
+            itemCapacity = 10;
+            hasItems = true;
+            isDuct = true;
+            alwaysUnlocked = true;
+        }};
+
+        /* ClankerBridgeeee */
+        transferTunnel = new DuctTunnel("transferTunnel"){{
+            requirements(Category.distribution, with(DAItems.rhodite, 5));
+            health = 120;
+            speed = 3f;
+            buildTime = 30f;
+            squareSprite = false;
+
+            range = 8;
             itemCapacity = 10;
             hasItems = true;
             isDuct = true;
