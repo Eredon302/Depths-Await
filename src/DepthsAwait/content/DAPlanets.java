@@ -4,7 +4,6 @@ import mindustry.content.Blocks;
 import mindustry.content.Planets;
 import mindustry.maps.generators.PlanetGenerator;
 import mindustry.type.Planet;
-import mindustry.type.Sector;
 
 public class DAPlanets {
 
