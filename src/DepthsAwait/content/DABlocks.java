@@ -11,11 +11,13 @@ import static mindustry.type.ItemStack.with;
 public class DABlocks {
 
     //Item transport
-    public static Block transferDuct;
-    //Liquid transport
+    public static Block transferDuct, transferSplitway, transferOverpass;
+    //Drills
+    //Liquids
     //Production
     //Turrets
     //Walls
+    //Units
     //Special
     public static Block coreTundra;
 
@@ -27,7 +29,7 @@ public class DABlocks {
 
             {
                 requirements(Category.distribution, with(DAItems.rhodite, 1));
-                health = 90;
+                health = 100;
                 speed = 3f;
                 alwaysUnlocked = true;
             }
@@ -41,7 +43,31 @@ public class DABlocks {
             }
         };
 
-        //Liquid transport
+        transferSplitway = new DuctRouter("transferSplitway"){{
+            requirements(Category.distribution, with(DAItems.rhodite, 2));
+            health = 100;
+            speed = 3f;
+            squareSprite = false;
+            alwaysUnlocked = true;
+        }};
+
+        transferOverpass = new DuctBridge("transferOverpass"){{
+            requirements(Category.distribution, with(DAItems.rhodite, 2));
+            health = 120;
+            speed = 3f;
+            buildTime = 30f;
+            squareSprite = false;
+
+            range = 4;
+            itemCapacity = 10;
+            hasItems = true;
+            isDuct = true;
+            alwaysUnlocked = true;
+        }};
+
+        //Drills
+
+        //Liquids
 
         //Production
 
@@ -49,19 +75,22 @@ public class DABlocks {
 
         //Walls
 
+        //Units
+
         //Special
 
         coreTundra = new CoreBlock("coreTundra"){{
             health = 5000;
             armor = 3;
             size = 4;
+            buildTime = 1500;
             squareSprite = false;
             alwaysUnlocked = true;
             isFirstTier = true;
             unitType = DAUnits.icicle;
 
             landDuration = 240;
-            itemCapacity = 3000;
+            itemCapacity = 3500;
             incinerateNonBuildable = true;
         }};
 
