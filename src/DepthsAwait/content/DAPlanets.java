@@ -23,10 +23,6 @@ public class DAPlanets {
                 floor = Blocks.stone;
             }};
 
-            Sector shallowCrevice = new Sector(0, cyria){{
-                alwaysUnlocked = true;
-            }}
-
         }};
 
     }
