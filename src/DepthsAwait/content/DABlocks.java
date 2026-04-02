@@ -11,7 +11,7 @@ import static mindustry.type.ItemStack.with;
 public class DABlocks {
 
     //Item transport
-    public static Block transferDuct, transferSplitway, transferOverpass;
+    public static Block transferDuct, transferSplitway, transferOverpass, transferCrossway;
     //Drills
     //Liquids
     //Production
@@ -44,6 +44,14 @@ public class DABlocks {
         };
 
         transferSplitway = new DuctRouter("transferSplitway"){{
+            requirements(Category.distribution, with(DAItems.rhodite, 2));
+            health = 100;
+            speed = 3f;
+            squareSprite = false;
+            alwaysUnlocked = true;
+        }};
+
+        transferCrossway = new Junction("transferCrossway"){{
             requirements(Category.distribution, with(DAItems.rhodite, 2));
             health = 100;
             speed = 3f;
