@@ -1,6 +1,5 @@
 package DepthsAwait.content;
 
-import arc.graphics.Color;
 import mindustry.content.Planets;
 import mindustry.type.Planet;
 
