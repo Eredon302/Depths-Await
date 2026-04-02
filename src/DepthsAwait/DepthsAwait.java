@@ -34,5 +34,6 @@ public class DepthsAwait extends Mod {
         DAPlanets.load();
         DAItems.load();
         DABlocks.load();
+        DAUnits.load();
     }
 }
