@@ -52,6 +52,7 @@ public class DABlocks {
         //Special
 
         coreTundra = new CoreBlock("coreTundra"){{
+            size = 4;
             alwaysUnlocked = true;
             isFirstTier = true;
             unitType = DAUnits.icicle;
