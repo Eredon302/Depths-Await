@@ -14,9 +14,10 @@ public class DABlocks {
     public static void load(){
 
         transferDuct = new Duct("transferDuct"){{
-            requirements(Category.distribution, with(DAItems.rhodite, 2));
+            requirements(Category.distribution, with(DAItems.rhodite, 1));
             health = 90;
-            speed = 4f;
+            speed = 3f;
+            itemCapacity = 2;
         }};
 
     }

@@ -4,7 +4,8 @@ import mindustry.type.Item;
 
 public class DAItems {
 
-    public static Item rhodite, thaumium, magnetite;
+    public static Item rhodite, thaumium, lithium;
+    //TODO maybe also add magnetite for something and also figure out how to color item filters
 
     public static void load(){
 
@@ -16,7 +17,7 @@ public class DAItems {
             cost = 1f;
             alwaysUnlocked = true;
         }};
-        magnetite = new Item("magnetite"){{
+        lithium = new Item("lithium"){{
             cost = 1f;
             alwaysUnlocked = true;
         }};
