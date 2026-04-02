@@ -26,8 +26,8 @@ public class DABlocks {
             @Override
             public TextureRegion[] icons(){
                 return new TextureRegion[]{
-                        botRegions[1],
-                        topRegions[1]
+                        botRegions[0],
+                        topRegions[0]
                 };
             }
         };
