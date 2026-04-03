@@ -74,7 +74,6 @@ public class DABlocks {
             alwaysUnlocked = true;
         }};
 
-        /* ClankerBridgeeee */
         transferTunnel = new DuctTunnel("transferTunnel"){{
             requirements(Category.distribution, with(DAItems.rhodite, 5));
             health = 120;
@@ -82,7 +81,7 @@ public class DABlocks {
             buildTime = 30f;
             squareSprite = false;
 
-            range = 8;
+            range = 12;
             itemCapacity = 10;
             hasItems = true;
             isDuct = true;
