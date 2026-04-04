@@ -48,7 +48,6 @@ public class DABlocks {
             requirements(Category.distribution, with(DAItems.rhodite, 2));
             health = 100;
             speed = 3f;
-            squareSprite = false;
             alwaysUnlocked = true;
         }};
 
@@ -56,7 +55,6 @@ public class DABlocks {
             requirements(Category.distribution, with(DAItems.rhodite, 2));
             health = 100;
             speed = 3f;
-            squareSprite = false;
             alwaysUnlocked = true;
         }};
 
@@ -65,7 +63,6 @@ public class DABlocks {
             health = 120;
             speed = 3f;
             buildTime = 30f;
-            squareSprite = false;
 
             range = 4;
             itemCapacity = 10;
@@ -79,7 +76,6 @@ public class DABlocks {
             health = 120;
             speed = 3f;
             buildTime = 30f;
-            squareSprite = false;
 
             range = 12;
             itemCapacity = 10;
