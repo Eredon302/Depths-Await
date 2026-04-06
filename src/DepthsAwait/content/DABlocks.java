@@ -1,10 +1,11 @@
 package DepthsAwait.content;
 
-import DepthsAwait.world.blocks.DuctTunnel;
+import DepthsAwait.world.blocks.*;
 import arc.graphics.g2d.TextureRegion;
 import mindustry.type.*;
 import mindustry.world.Block;
 import mindustry.world.blocks.distribution.*;
+import mindustry.world.blocks.liquid.Conduit;
 import mindustry.world.blocks.storage.*;
 
 import static mindustry.type.ItemStack.with;
@@ -15,6 +16,7 @@ public class DABlocks {
     public static Block transferDuct, transferSplitway, transferOverpass, transferCrossway, transferTunnel;
     //Drills
     //Liquids
+    public static Block liquidChannel, magmaTap;
     //Production
     //Turrets
     //Walls
@@ -33,6 +35,9 @@ public class DABlocks {
                 health = 100;
                 speed = 3f;
                 alwaysUnlocked = true;
+
+                junctionReplacement = transferCrossway;
+                bridgeReplacement = transferOverpass;
             }
 
             @Override
@@ -77,7 +82,7 @@ public class DABlocks {
             speed = 3f;
             buildTime = 30f;
 
-            range = 12;
+            range = 15;
             itemCapacity = 10;
             hasItems = true;
             isDuct = true;
@@ -87,6 +92,30 @@ public class DABlocks {
         //Drills
 
         //Liquids
+
+        liquidChannel = new Conduit("liquidChannel"){
+            {
+                requirements(Category.liquid, with(DAItems.thaumium, 1));
+                health = 200;
+
+                underBullets = true;
+            }
+
+            @Override
+            public TextureRegion[] icons(){
+                return new TextureRegion[]{
+                        botRegions[0],
+                        topRegions[0]
+                };
+            }
+
+        };
+
+        magmaTap = new MagmaTap("magmaTap"){{
+            requirements(Category.liquid, with(DAItems.thaumium, 1));
+        }};
+
+        // TODO make the magmaTap work as well as the liquid, channel rendering and the magmaTile
 
         //Production
 
