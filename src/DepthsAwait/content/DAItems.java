@@ -4,7 +4,10 @@ import mindustry.type.Item;
 
 public class DAItems {
 
-    public static Item rhodite, thaumium, basalticResidue, lithium;
+    public static Item rhodite;
+    public static Item thaumium;
+    public static Item basalticResidue;
+    public static Item lithium;
     //TODO maybe also add magnetite for something and also figure out how to color item filters
 
     public static void load(){

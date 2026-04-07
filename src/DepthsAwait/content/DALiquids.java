@@ -11,7 +11,7 @@ public class DALiquids {
 
     public static void load(){
 
-        magma = new Liquid("Magma"){{
+        magma = new Liquid("magma"){{
             color = Color.valueOf("ff4800");
             barColor = Color.valueOf("ff4800");
             lightColor = Color.valueOf("ff480080");

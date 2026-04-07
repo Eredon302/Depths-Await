@@ -16,7 +16,7 @@ public class DABlocks {
     public static Block transferDuct, transferSplitway, transferOverpass, transferCrossway, transferTunnel;
     //Drills
     //Liquids
-    public static Block liquidChannel, magmaTap;
+    public static Block fluidChannel, magmaTap;
     //Production
     //Turrets
     //Walls
@@ -93,7 +93,7 @@ public class DABlocks {
 
         //Liquids
 
-        liquidChannel = new Conduit("liquidChannel"){
+        fluidChannel = new Conduit("fluidChannel"){
             {
                 requirements(Category.liquid, with(DAItems.thaumium, 1));
                 health = 200;
@@ -111,9 +111,23 @@ public class DABlocks {
 
         };
 
-        magmaTap = new MagmaTap("magmaTap"){{
-            requirements(Category.liquid, with(DAItems.thaumium, 1));
-        }};
+        magmaTap = new MagmaTap("magmaTap"){
+            {
+                requirements(Category.liquid, with(DAItems.thaumium, 1));
+                health = 150;
+
+                rotate = true;
+                quickRotate = false;
+            }
+
+            @Override
+            public TextureRegion[] icons(){
+                return new TextureRegion[]{
+                        bottomRegion,
+                        region
+                };
+            }
+        };
 
         // TODO make the magmaTap work as well as the liquid, channel rendering and the magmaTile
 
